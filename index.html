@@ -120,10 +120,10 @@
 				<h2>Design tips, tricks, and freebies. Delivered weekly.</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod.</p>
 			</div>
-			<div class="PART-5-buttons">
-				<p>Email Address...</p>
-				<a href="#">SUBSCRIBE</a>
-			</div>
+			<form action="" method="GET">
+				<input type="Email" required name="Email" placeholder="Email Address...">
+				<button type="submit">Subscribe</button>
+			</form>
 		</div>
 		<div class="PART-6">
 			<h2>Get in touch</h2>
@@ -131,16 +131,24 @@
 			<hr>
 		</div>
 		<div class="PART-7">
-			<div class="PART-7-left">
-				<div class="Name-Mail">
-					<p>Name</p>
-					<p>Your Mail</p>
-				</div>
-				<div class="Massage">
-					<p>Type your message</p>
-				</div>
-				<a href="#">SEND MASSAGE</a>
-			</div>
+			<form action="" method="GET" class="PART-7-left">
+				<fieldset>
+					<legend class="PART-7-left-up">
+						<label for="Name" class="Name-Mail">
+							<input type="text" name="Name" id="Name" placeholder="Name">
+						</label>
+						<label for="Email" class="Name-Mail">
+							<input type="Email" required name="Email" id="Email" placeholder="Your Mail">
+						</label>
+					</legend>	
+				</fieldset>
+				<fieldset>
+					<label for="Message" class="Message">
+						<textarea name="Message" id="Message" cols="25" rows="10" placeholder="Type your message"></textarea>
+					</label>
+				</fieldset>
+				<button type="submit">Send message</button>
+			</form>
 			<div class="PART-7-right">
 				<p style="font-size: 18px;  font-weight: bold;">CONTACT INFO</p>
 				<p>Jalalabad 24/A, Ambaarkhana, Sylhet, Bangladesh</p>
